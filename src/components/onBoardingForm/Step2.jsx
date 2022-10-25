@@ -50,13 +50,13 @@ const Step2 = ({ goOnNextStep }) => {
             <div className="text-red-500">{formik.errors.workspaceName}</div>
           ) : null}
 
-          <div className="flex flex-col justify-between item-center">
+          <div className="flex flex-col justify-between item-center w-[350px]">
             <label htmlFor="workspaceURL">
               Workspace URL <span className="text-gray-400">(optional)</span>{" "}
             </label>
-            <div className="flex justify-between item-center pb-2">
+            <div className="flex justify-between item-center pb-2 w-[350px]">
               <input
-                className="border py-2 px-3 text-gray-500 rounded w-[150px]"
+                className="border px-3 text-gray-500 rounded w-[150px]"
                 type="text"
                 name="eden"
                 id="eden"
@@ -65,7 +65,7 @@ const Step2 = ({ goOnNextStep }) => {
               />
               <input
                 type="text"
-                className="border py-2 px-3 text-gray-700 rounded"
+                className="border py-2 px-3 text-gray-700 rounded w-[200px]"
                 placeholder="Example"
                 id="workspaceURL"
                 onChange={formik.handleChange}
